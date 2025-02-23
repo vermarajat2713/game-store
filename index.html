@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Game Store</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        #intro_1:hover {
+            font-family: fantasy;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between; /* Space out items evenly */
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            height: 400px;
+            box-sizing:border-box;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #666;
+            flex-grow: 1;
+        }
+
+        .product .price {
+            font-size: 1.2rem;
+            color: #27ae60;
+            margin-top: 10px;
+        }
+
+        .buy-btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        nav {
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #f4f4f4;
+            color: #27ae60;
+        }
+        /* Smooth scrolling for the home and contact sections */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Contact Us Section Styles */
+        .contact-section {
+            background-color: #abf1b1; /* Light Green background */
+            padding: 40px;
+            margin-top: 20px;
+            text-align: center;
+            border: solid black;
+        }
+
+        .contact-section a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            color: #021d0d;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+        }
+        </style>
+       </head>
+       <body>
+    <!-- Header Section -->
+    <header>
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">Welcome to the Online Game Store</h1>
+        <p style="font-family:'Courier New', Courier, monospace;">Shop the best online games for your enjoyment</p>
+        <nav id="intro_1">
+            <a href="#home">HOME</a><hr>
+            <a href="https://esportsinsider.com/" target="_blank">NEWS</a><hr>
+            <a href="https://www.example.com/store" target="_blank">STORE</a><hr>
+            <a href="https://www.esports.net/" target="_blank">ESPORTS</a><hr>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container" id="home">
+        <h2 id="intro_2">Home</h2>
+
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="https://www.callofduty.com/store/games/mobile" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/listings/GamesPLP_CODM.webp" alt="Game 1">
+            </a>
+            <h3> Call of Duty MOBILE</h3>
+            <p>The CALL OF DUTY you know and love but on your mobile device...</p>
+            <a href="https://www.callofduty.com/mobile?is_retargeting=true&source_caller=ui&shortlink=9ay7t18p&c=M2_CODM_MKT_ALL_SOCIAL_CODWEBSITETRAFFIC&pid=Social&af_click_lookback=7d&af_xp=custom&af_reengagement_window=30d" class="buy-btn">Free to Play</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="https://www.callofduty.com/store/games/modernwarfare2" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/listings/GamesPLP_MWII.webp" alt="Game 2">
+            </a>
+            <h3> CALL OF DUTY MODERN WARFARE II</h3>
+            <p>Call of Duty: Modern Warfare II drops players into an unprecedented global conflict...</p>
+            <div class="price">$69.99+</div>
+            <a href="https://www.xbox.com/en-US/games/store/call-of-duty-modern-warfare-ii-cross-gen-bundle/9pfmf665qxl2?ocid=pdpshare" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="https://www.callofduty.com/store/games/vanguard" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/listings/GamesPLP_Vanguard.webp" alt="Game 3">
+            </a>
+            <h3> CALL OF DUTY VANGUARD</h3>
+            <p>Experience influential battles of World War II and fight for victory across the Eastern and Western Fronts...</p>
+            <div class="price">$69.99</div>
+            <a href="https://www.xbox.com/en-US/games/store/call-of-duty-vanguard-cross-gen-bundle/9pdpd158glkd?ocid=pdpshare" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Add other game products here -->
+          <!-- New Game 4: Call of Duty Warzone -->
+        <div class="product">
+            <a href="https://www.callofduty.com/warzone" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/wz/overview/bo6-season-1/COD-HP_WZ_Get-The-Game.png">
+            </a>
+            <h3> Call of Duty Warzone</h3>
+            <p>Jump into the action with Call of Duty: Warzone, a free-to-play battle royale game that features intense combat, massive maps, and various multiplayer modes.</p>
+            <div class="price">$59.99</div>
+            <a href="https://www.callofduty.com/warzone" class="buy-btn">Free to Play</a>
+        </div>
+
+        <!-- New Game 5: Call of Duty Warzone Mobile -->
+        <div class="product">
+            <a href="https://www.callofduty.com/warzone-mobile" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/listings/WZM_Hero_Crop_Square.webp">
+            </a>
+            <h3>Call of Duty Warzone Mobile</h3>
+            <p>Play Warzone anywhere with the mobile version. Enjoy the same battle royale action, now optimized for your mobile device!</p>
+            <div class="price">Free</div>
+            <a href="https://www.callofduty.com/warzone-mobile" class="buy-btn">Free to Play</a>
+        </div>
+
+        <!-- New Game 6: PS5 Game - Horizon Forbidden West -->
+        <div class="product">
+            <a href="https://www.playstation.com/en-us/games/horizon-forbidden-west/" target="_blank">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.OlS3gqIn9JL2Tys_SEIoZgHaHa&pid=Api&P=0&h=220">
+            </a>
+            <h3> Horizon Forbidden West</h3>
+            <p>Join Aloy on her journey across the stunning open world of Horizon Forbidden West, a breathtaking action RPG exclusive to PlayStation 5.</p>
+            <div class="price">$69.99</div>
+            <a href="https://www.playstation.com/en-us/games/horizon-forbidden-west/" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- New Game 7: PS5 Game - Ratchet & Clank: Rift Apart -->
+        <div class="product">
+            <a href="https://www.playstation.com/en-us/games/ratchet-and-clank-rift-apart/" target="_blank">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.CAM7MvUR3SUUTR2qwgdJ1AHaHq&pid=Api&P=0&h=220">
+            </a>
+            <h3>Ratchet & Clank: Rift Apart</h3>
+            <p>Embark on an adventure with Ratchet and Clank in this visually stunning action-platformer designed exclusively for PlayStation 5.</p>
+            <div class="price">$69.99</div>
+            <a href="https://www.playstation.com/en-us/games/ratchet-and-clank-rift-apart/" class="buy-btn">Buy Now</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="https://www.callofduty.com/store/games/blackops6" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/listings/BO6_PLPCard_Hero.webp" alt="Game 4">
+            </a>
+            <h3>CALL OF DUTY BLACK OPS 6</h3>
+            <p>While the Gulf War commands the global spotlight, a shadowy clandestine force has infiltrated the highest levels of the CIA, branding anyone who resists as traitors.</p>
+            <div class="price">$69.99+</div>
+            <a href="https://www.xbox.com/en-US/games/store/call-of-duty-black-ops-6-vault-edition/9PNKSTGVNPJH" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="https://www.callofduty.com/store/games/modernwarfare3" target="_blank">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/listings/GamesPLP_MWIII.webp" alt="Game 5">
+            </a>
+            <h3>CALL OF DUTY MODERN WARFARE III</h3>
+            <p>The CALL OF DUTY you know and love but on your mobile device. With multiplayer modes such as Team Deathmatch, Domination, and Kill-Confirmed on iconic maps such as Nuketown, Raid, and Standoff, 100 player Battle Royale, and Zombies modes, CALL OF DUTY: MOBILE has it all!</p>
+            <div class="price">$69.99+</div>
+            <a href="https://www.xbox.com/en-US/games/store/call-of-duty-modern-warfare-ii-cross-gen-bundle/9pfmf665qxl2?ocid=pdpshare" class="buy-btn">Buy Now</a>
+        </div>
+ <!-- New Game 4: Life is Strange: Double Exposure -->
+ <div class="product">
+    <a href="https://lifeisstrange.square-enix-games.com/en-us/" target="_blank">
+        <img src="https://fyre.cdn.sewest.net/life-is-strange-hub/663a14e55a1a8ff866efe325/life-is-strange-2024-s7llpz_lQ.jpg?quality=85&width=768">
+    </a>
+    <h3>Life is Strange: Double Exposure</h3>
+    <p>A new story in the Life is Strange universe with emotional storytelling and choice-based gameplay.</p>
+    <div class="price">$39.99</div>
+    <a href="https://lifeisstrange.square-enix-games.com/en-us/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 5: Dragon Ball: Sparking Zero -->
+<div class="product">
+    <a href="https://www.bandainamcoent.com/games/dragon-ball-sparking-zero" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202501/0701/5dc74ee69ceaaad812c90f21fa26f63d899af8d350f82b65.png?w=440&thumb=false">
+    </a>
+    <h3>Dragon Ball: Sparking Zero</h3>
+    <p>Battle through the Dragon Ball universe with exciting new characters and stages!</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.bandainamcoent.com/games/dragon-ball-sparking-zero" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 6: Metaphor: Refantazio -->
+<div class="product">
+    <a href="https://www.atlus.com/metaphor-refantazio/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202405/1409/cc145998ba1c84014d652364407ce7e24fec07a2075a0eb5.png?w=440&thumb=false">
+    </a>
+    <h3>Metaphor: Refantazio</h3>
+    <p>Step into a mysterious world filled with philosophical themes and stunning visuals.</p>
+    <div class="price">$49.99</div>
+    <a href="https://www.atlus.com/metaphor-refantazio/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 7: Warhammer 40,000: Space Marine 2 -->
+<div class="product">
+    <a href="https://www.sega.com/games/warhammer-40000-space-marine-2" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202411/2711/0bad43cfdcbc09aaf00ab6014c12309e4d3cf775f427ebcc.png?w=440&thumb=false">
+    </a>
+    <h3>Warhammer 40,000: Space Marine 2</h3>
+    <p>Join the Space Marines as they battle the forces of Chaos in epic warfare.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.sega.com/games/warhammer-40000-space-marine-2" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 8: The Pulcy Squire -->
+<div class="product">
+    <a href="https://www.pulcysquire.com/" target="_blank">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.rcKGoAUmNRN7VgkFOFO2FQHaHa&pid=Api&P=0&h=220" alt="The Pulcy Squire">
+    </a>
+    <h3>The Pulcy Squire</h3>
+    <p>Join Pulcy on a fun and quirky journey as he defends his kingdom in this action-adventure game!</p>
+    <div class="price">$39.99</div>
+    <a href="https://www.pulcysquire.com/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 9: The Casting of Frank Stone -->
+<div class="product">
+    <a href="https://www.frankstonecastinggame.com" target="_blank">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.L0VPTfDFCD08Hy5FGymfFAHaHa&pid=Api&P=0&h=220">
+    </a>
+    <h3>The Casting of Frank Stone</h3>
+    <p>Unravel the mystery of Frank Stone in this narrative-driven adventure game.</p>
+    <div class="price">$29.99</div>
+    <a href="https://www.frankstonecastinggame.com" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 10: Harry Potter: Quidditch Champions -->
+<div class="product">
+    <a href="https://www.wbgames.com/harry-potter-quidditch-champions" target="_blank">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.Y2GBZs1Zd4LjxTG9Pz3ejQHaHa&pid=Api&P=0&h=220">
+    </a>
+    <h3>Harry Potter: Quidditch Champions</h3>
+    <p>Compete in high-flying Quidditch matches in the wizarding world!</p>
+    <div class="price">$49.99</div>
+    <a href="https://www.wbgames.com/harry-potter-quidditch-champions" class="buy-btn">Buy Now</a>
+</div>
+<!-- New Game 11: Dragon's Dorma 2 -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/dragons-dogma-2/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202403/1105/e9739f096f2123c5d32959b26de7ae13dd9f850e25f05bc2.png?w=440&thumb=false" alt="Dragon's Dorma 2">
+    </a>
+    <h3>Dragon's Dorma 2</h3>
+    <p>An epic fantasy adventure that continues the saga of Dragon's Dorma.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/dragons-dogma-2/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 12: Final Fantasy VII Rebirth -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/final-fantasy-vii-rebirth/" target="_blank">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.vbvIaAzU4wWRFUU2aguN1AHaHa&pid=Api&P=0&h=220" alt="Final Fantasy VII Rebirth">
+    </a>
+    <h3>Final Fantasy VII Rebirth</h3>
+    <p>Join Cloud and the team in this highly anticipated continuation of the FFVII saga.</p>
+    <div class="price">$69.99</div>
+    <a href="https://www.playstation.com/en-us/games/final-fantasy-vii-rebirth/" target="_blank" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 13: Elden Ring: Shadow of the Erdtree -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/elden-ring/elden-ring-shadow-of-the-erdtree/" target="_blank">
+        <img src="https://tse4.mm.bing.net/th?id=OIP._gde09wyeG9dDG7fUlfnnwHaGV&pid=Api&P=0&h=220">
+    </a>
+    <h3>Elden Ring: Shadow of the Erdtree</h3>
+    <p>Explore the mysterious lands of the Erdtree in this thrilling expansion to Elden Ring.</p>
+    <div class="price">$39.99</div>
+    <a href="https://www.playstation.com/en-us/games/elden-ring/elden-ring-shadow-of-the-erdtree/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 14: Like a Dragon: Infinite Wealth -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/like-a-dragon-infinite-wealth/" target="_blank">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7lURTP2AmSdtVeK5PEZXdgHaHa&pid=Api&P=0&h=220">
+    </a>
+    <h3>Like a Dragon: Infinite Wealth</h3>
+    <p>Embark on a new adventure filled with wealth, intrigue, and intense action.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/like-a-dragon-infinite-wealth/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 15: Dynasty Warriors: Origin -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/dynasty-warriors-origins/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202411/2807/0fd57213476f2f68c51890e1e70a8cc48f0a4acea53e3a9d.png?w=440&thumb=false">
+    </a>
+    <h3>Dynasty Warriors: Origin</h3>
+    <p>Command legendary warriors in epic battles that shape the course of history.</p>
+    <div class="price">$49.99</div>
+    <a href="https://www.playstation.com/en-us/games/dynasty-warriors-origins/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 16: Hogwarts Legacy -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/hogwarts-legacy/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202301/1300/rWbsg6FepgKiilEUoBc0fJBO.png?w=440&thumb=false" alt="Hogwarts Legacy">
+    </a>
+    <h3>Hogwarts Legacy</h3>
+    <p>Live your Hogwarts adventure in the magical wizarding world as a young witch or wizard.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/hogwarts-legacy/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 17: Assassin's Creed Mirage -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/assassins-creed-mirage/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202309/0515/9080b070a400d4078c10c77a3fc3bbd6b80d150b1abc48b7.png?w=440&thumb=false">
+    </a>
+    <h3>Assassin's Creed Mirage</h3>
+    <p>Unravel mysteries in the shadows with the latest Assassin's Creed adventure.</p>
+    <div class="price">$69.99</div>
+    <a href="https://www.playstation.com/en-us/games/assassins-creed-mirage/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 18: Alan Wake 2 -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/alan-wake-2/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202309/0818/338f2c722e938098763a27ead4a182c3cc3f8741e709279a.png?w=440&thumb=false" alt="Alan Wake 2">
+    </a>
+    <h3>Alan Wake 2</h3>
+    <p>Return to the eerie world of Alan Wake in this chilling sequel.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/alan-wake-2/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 19: Tekken 8 -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/tekken-8/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202402/1300/2d0639077177fab875fadd23abbf03562ea5384350ec95bf.png?w=440&thumb=false" alt="Tekken 8">
+    </a>
+    <h3>Tekken 8</h3>
+    <p>The battle for dominance continues in Tekken 8 with new characters and stages!</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/tekken-8/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 20: Mortal Kombat 1 -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/mortal-kombat-1/" target="_blank">
+        ,<img src="https://image.api.playstation.com/vulcan/ap/rnd/202403/2916/444d4b0622a580d6253bb843c580e4af10ef46ff239546e3.png?w=440&thumb=false" alt="Mortal Kombat 1">
+    </a>
+    <h3>Mortal Kombat 1</h3>
+    <p>Experience the blood-soaked battles in this iconic fighting game reboot.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/mortal-kombat-1/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 21: Street Fighter 6 -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/street-fighter-6/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202301/3008/sZLtFOBB67U52HBx7pLtgua2.png?w=440&thumb=false" alt="Street Fighter 6">
+    </a>
+    <h3>Street Fighter 6</h3>
+    <p>Join the fight in the latest entry in the legendary Street Fighter series.</p>
+    <div class="price">$59.99</div>
+    <a href="https://www.playstation.com/en-us/games/street-fighter-6/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 22: Star Wars Jedi: Survivor -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/star-wars-jedi-survivor/" target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202304/1016/433391d58a507e1e82ac046b6af96649e0ac2197e5d0bcaa.png?w=440&thumb=false" alt="Star Wars Jedi: Survivor">
+    </a>
+    <h3>Star Wars Jedi: Survivor</h3>
+    <p>Continue the journey of a Jedi survivor in the thrilling Star Wars universe.</p>
+    <div class="price">$69.99</div>
+    <a href="https://www.playstation.com/en-us/games/star-wars-jedi-survivor/" class="buy-btn">Buy Now</a>
+</div>
+
+<!-- New Game 23: Legacy of Kain: Soul Reaver 1 & 2 Remastered -->
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/legacy-of-kain-soul-reaver-1-2-remastered/" target="_blank">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.8pugCDSgsNHzxg_8M26qBQHaHa&pid=Api&P=0&h=220">
+    </a>
+    <h3>Legacy of Kain: Soul Reaver 1 & 2 Remastered</h3>
+    <p>Relive the iconic Legacy of Kain saga with remastered versions of Soul Reaver 1 and 2.</p>
+    <div class="price">$49.99</div>
+    <a href="https://www.playstation.com/en-us/games/legacy-of-kain-soul-reaver-1-2-remastered/" class="buy-btn">Buy Now</a>
+</div>
+<div class="product">
+    <a href="https://www.playstation.com/en-us/games/marvels-spider-man-miles-morales/" target="_blank">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.DJbNjDA7KFfmE6w1D6Y6OQHaJQ&pid=Api&P=0&h=220">
+    </a>
+    <h3>Marvel's Spider-Man: Miles Morales</h3>
+    <p>Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man</p>
+    <div class="price">$59.99</div>
+    <a href="https://tse1.mm.bing.net/th?id=OIP.DJbNjDA7KFfmE6w1D6Y6OQHaJQ&pid=Api&P=0&h=220" class="buy-btn">Free to Play</a>
+</div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us through the following:</p>
+        <p><strong>Helpline Number:</strong> +1-800-123-4567</p>
+        <p><strong>Email:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+
+        <div class="social-links">
+            <h3>Follow Us:</h3>
+            <a href="https://www.instagram.com/youraccount" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/youraccount" target="_blank">Facebook</a>
+            <a href="https://x.com/youraccount" target="_blank">X</a>
+            <a href="https://www.youtube.com/yourchannel" target="_blank">YouTube</a>
+        </div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Online Game Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
